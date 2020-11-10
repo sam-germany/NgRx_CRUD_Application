@@ -40,7 +40,7 @@ export class CustomerAddComponent implements OnInit {
       membership: this.customerForm.get('membership').value
              };
 
-    new customerActions.CreateCustomer(newCustomer)
+    this.store.dispatch(new customerActions.CreateCustomer(newCustomer));
     this.customerForm.reset();
   }
 

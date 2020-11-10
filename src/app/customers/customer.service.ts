@@ -17,9 +17,6 @@ export class CustomerService {
     return this.http.get<Customer[]>(this.customersUrl);
   }
 
-
-
-
   getCustomerById(payload: number): Observable<Customer> {
     return this.http.get<Customer>(`${this.customersUrl}/${payload}`);
   }

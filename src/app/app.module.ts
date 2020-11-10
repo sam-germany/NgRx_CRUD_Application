@@ -11,12 +11,15 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./home/home.component";
 import { NavbarComponent } from "./navbar/navbar.component";
+import {routerReducer} from '@ngrx/router-store';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent],
   imports: [
     BrowserModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({
+      router: routerReducer
+    }),
     StoreDevtoolsModule.instrument(),
     EffectsModule.forRoot([]),
     HttpClientModule,

@@ -31,7 +31,7 @@ export const defaultCustomer: CustomerState = {
 export const initialState = customerAdapter.getInitialState(defaultCustomer);
 
 export function customerReducer( state = initialState,
-                                           action: customerActions.Action22  ): CustomerState {
+                                           action: customerActions.Action  ): CustomerState {
 
 
      switch (action.type) {
