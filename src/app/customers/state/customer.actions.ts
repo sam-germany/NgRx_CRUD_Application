@@ -55,6 +55,10 @@ export class LoadCustomerFail implements Action {
   constructor(public payload: string) {}
 }
 
+
+
+
+
 export class CreateCustomer implements Action {
   readonly type = CustomerActionTypes.CREATE_CUSTOMER;
 
@@ -72,6 +76,11 @@ export class CreateCustomerFail implements Action {
 
   constructor(public payload: string) {}
 }
+
+
+
+
+
 
 export class UpdateCustomer implements Action {
   readonly type = CustomerActionTypes.UPDATE_CUSTOMER;
@@ -91,6 +100,9 @@ export class UpdateCustomerFail implements Action {
   constructor(public payload: string) {}
 }
 
+
+
+
 export class DeleteCustomer implements Action {
   readonly type = CustomerActionTypes.DELETE_CUSTOMER;
 
@@ -108,6 +120,13 @@ export class DeleteCustomerFail implements Action {
 
   constructor(public payload: string) {}
 }
+
+
+
+
+
+
+
 
 export type Action =
   | LoadCustomers

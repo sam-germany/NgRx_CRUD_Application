@@ -27,9 +27,7 @@ export class CustomerEditComponent implements OnInit {
          id: null
        })
 
-       const customer$: Observable<Customer> = this.store.select(
-         fromCustomer.getCurrentCustomer
-       )
+       const customer$: Observable<Customer> = this.store.select(fromCustomer.getCurrentCustomer )
 
        customer$.subscribe(currentCustomer => {
          if( currentCustomer) {
