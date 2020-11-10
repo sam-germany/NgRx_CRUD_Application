@@ -27,7 +27,7 @@ export const defaultCustomer: CustomerState = {
   loaded: false,
   error: ""
 };
-
+//--
 export const initialState = customerAdapter.getInitialState(defaultCustomer);
 
 export function customerReducer( state = initialState,
