@@ -1,3 +1,3 @@
 
 
-[](src/images/screenshot.jpg)
+![](src/images/screenshot.jpg)
